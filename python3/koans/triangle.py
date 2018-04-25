@@ -17,6 +17,13 @@
 #   about_triangle_project_2.py
 #
 def triangle(a, b, c):
+    unique_sides = {a,b,c}
+    if len(unique_sides) == 1:
+        return 'equilateral'
+    elif len(unique_sides) == 2:
+        return 'isosceles'
+    elif len(unique_sides) == 3:
+        return 'scalene'
     # DELETE 'PASS' AND WRITE THIS CODE
     pass
 
